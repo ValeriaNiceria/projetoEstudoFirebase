@@ -1,0 +1,129 @@
+[debug] [2018-03-30T14:54:26.821Z] ----------------------------------------------------------------------
+[debug] [2018-03-30T14:54:26.829Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-30T14:54:26.830Z] CLI Version:   3.17.7
+[debug] [2018-03-30T14:54:26.830Z] Platform:      linux
+[debug] [2018-03-30T14:54:26.830Z] Node Version:  v8.10.0
+[debug] [2018-03-30T14:54:26.830Z] Time:          Fri Mar 30 2018 11:54:26 GMT-0300 (-03)
+[debug] [2018-03-30T14:54:26.830Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-30T14:54:26.851Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-30T14:54:26.851Z] > authorizing via signed-in user
+[debug] [2018-03-30T14:54:26.854Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-30T14:54:26.855Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vmTel0T9k6_9GwJIiH89E0A_ocPGT2Cd1KRqflEemM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Mar 30 2018 11:54:26 GMT-0300 (-03)
+[debug] [2018-03-30T14:54:27.843Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T14:54:27.894Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/estudo-firebase-6bcec  
+  
+ Fri Mar 30 2018 11:54:27 GMT-0300 (-03)
+[debug] [2018-03-30T14:54:29.607Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T14:54:29.609Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/estudo-firebase-6bcec/tokens  
+  
+ Fri Mar 30 2018 11:54:29 GMT-0300 (-03)
+[debug] [2018-03-30T14:54:30.727Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T14:54:30.729Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/estudo-firebase-6bcec  
+  
+ Fri Mar 30 2018 11:54:30 GMT-0300 (-03)
+[debug] [2018-03-30T14:54:38.293Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/projetoEstudoFirebase'...
+[info] 
+[debug] [2018-03-30T14:54:38.300Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/301171509059/clients/_:getWebAppConfig  
+  
+ Fri Mar 30 2018 11:54:38 GMT-0300 (-03)
+[debug] [2018-03-30T14:54:39.778Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-30T14:57:06.905Z] Error: connect ETIMEDOUT 92.242.140.20:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-30T14:57:06.908Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketCloseListener (_http_client.js:363:23)
+    at emitOne (events.js:121:20)
+    at TLSSocket.emit (events.js:211:7)
+    at _handle.close (net.js:567:12)
+    at TCP.done [as _onclose] (_tls_wrap.js:356:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-03-30T15:02:26.403Z] ----------------------------------------------------------------------
+[debug] [2018-03-30T15:02:26.409Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-30T15:02:26.410Z] CLI Version:   3.17.7
+[debug] [2018-03-30T15:02:26.410Z] Platform:      linux
+[debug] [2018-03-30T15:02:26.410Z] Node Version:  v8.10.0
+[debug] [2018-03-30T15:02:26.410Z] Time:          Fri Mar 30 2018 12:02:26 GMT-0300 (-03)
+[debug] [2018-03-30T15:02:26.410Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-30T15:02:26.429Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-30T15:02:26.429Z] > authorizing via signed-in user
+[debug] [2018-03-30T15:02:26.433Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/estudo-firebase-6bcec  
+  
+ Fri Mar 30 2018 12:02:26 GMT-0300 (-03)
+[debug] [2018-03-30T15:02:27.736Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T15:02:27.737Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/estudo-firebase-6bcec/tokens  
+  
+ Fri Mar 30 2018 12:02:27 GMT-0300 (-03)
+[debug] [2018-03-30T15:02:33.599Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T15:02:33.601Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/estudo-firebase-6bcec  
+  
+ Fri Mar 30 2018 12:02:33 GMT-0300 (-03)
+[debug] [2018-03-30T15:02:34.643Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/projetoEstudoFirebase'...
+[info] 
+[debug] [2018-03-30T15:02:34.648Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/301171509059/clients/_:getWebAppConfig  
+  
+ Fri Mar 30 2018 12:02:34 GMT-0300 (-03)
+[debug] [2018-03-30T15:02:35.340Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
+[debug] [2018-03-30T15:46:41.512Z] ----------------------------------------------------------------------
+[debug] [2018-03-30T15:46:41.559Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-03-30T15:46:41.560Z] CLI Version:   3.17.7
+[debug] [2018-03-30T15:46:41.560Z] Platform:      linux
+[debug] [2018-03-30T15:46:41.560Z] Node Version:  v8.10.0
+[debug] [2018-03-30T15:46:41.560Z] Time:          Fri Mar 30 2018 12:46:41 GMT-0300 (-03)
+[debug] [2018-03-30T15:46:41.560Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-30T15:46:41.625Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-30T15:46:41.625Z] > authorizing via signed-in user
+[debug] [2018-03-30T15:46:41.628Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-30T15:46:41.629Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/vmTel0T9k6_9GwJIiH89E0A_ocPGT2Cd1KRqflEemM8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Mar 30 2018 12:46:41 GMT-0300 (-03)
+[debug] [2018-03-30T15:46:42.288Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T15:46:42.369Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/estudo-firebase-6bcec  
+  
+ Fri Mar 30 2018 12:46:42 GMT-0300 (-03)
+[debug] [2018-03-30T15:46:43.373Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T15:46:43.375Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/estudo-firebase-6bcec/tokens  
+  
+ Fri Mar 30 2018 12:46:43 GMT-0300 (-03)
+[debug] [2018-03-30T15:46:44.158Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-30T15:46:44.160Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/estudo-firebase-6bcec  
+  
+ Fri Mar 30 2018 12:46:44 GMT-0300 (-03)
+[debug] [2018-03-30T15:46:45.349Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/valeria/Área de Trabalho/projetoEstudoFirebase'...
+[info] 
+[debug] [2018-03-30T15:46:45.355Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/301171509059/clients/_:getWebAppConfig  
+  
+ Fri Mar 30 2018 12:46:45 GMT-0300 (-03)
+[debug] [2018-03-30T15:46:56.800Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+

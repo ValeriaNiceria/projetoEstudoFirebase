@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Estudo Firebase</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta http-equiv="Content-Type" content="text/html; character=utf-8">
+
+  <!-- Bootswatch Lumen -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Meu estilo -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1>Real Time Database</h1>
+
+  <ul id="userlist"></ul>
+  <hr>
+
+  <div class="col-md-4">
+    <form method="post">
+
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Informe o nome" class="form-control" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="Informe a idade" class="form-control" required/>
+      </div>
+
+      <button class="btn btn-block btn-success" id="addButton">Adicionar</button>
+    </form>
+  </div>
+
+  <a href="index.html" class="btn mt-2">Voltar para Home</a>
+
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <!-- Firebase JS -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <!-- Real Time Database JS -->
+  <script src="assets/js/real-time-database.js"></script>
+</body>
+</html>
