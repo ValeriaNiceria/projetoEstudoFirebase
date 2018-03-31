@@ -6,6 +6,7 @@ var senha = document.getElementById("senha");
 /*buttons*/
 var loginButton = document.getElementById("loginButton");
 var createUserButton = document.getElementById("createUserButton");
+var logOutButton = document.getElementById("logOutButton");
 
 /*criar novo usuário*/
 createUserButton.addEventListener('click', function() {
@@ -45,8 +46,17 @@ loginButton.addEventListener('click', function() {
 });
 
 
-
-
-
+/* Logout */
+logOutButton.addEventListener('click', function() {
+	firebase
+		.auth()
+		.signOut()
+		.then(function() {
+			displayMessage.innerText = 'Você não está autenticado';
+			alert('Você se deslogou');
+		}, function(error) {
+			console.error(error);
+		});
+});
 
 
