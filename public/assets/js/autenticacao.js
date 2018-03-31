@@ -25,6 +25,26 @@ createUserButton.addEventListener('click', function() {
 });
 
 
+/* autenticar com e-mail e senha */
+loginButton.addEventListener('click', function() {
+	firebase
+		.auth()
+		.signInWithEmailAndPassword(email.value, senha.value)
+		.then(function(result) {
+			console.log(result);
+			displayMessage.innerText = 'Bem vindo, ' +email.value;
+			alert('Autenticado ' + email.value);
+			email.value = null;
+			senha.value = null;
+		})
+		.catch(function(error) {
+			console.error(error.code);
+			console.error(error.message);
+			alert('Falha ao autenticar, verifique o erro no console.');
+		})
+});
+
+
 
 
 
