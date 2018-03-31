@@ -17,7 +17,7 @@
   <h1>Autenticação</h1>
 
   <div class="col-md-4">
-    <h3 class="text-center mb-3" id="displayName">Você não está autenticado</h3>
+    <h3 class="text-center mb-3" id="displayMessage">Você não está autenticado</h3>
 
     <form method="post">
 
@@ -34,7 +34,7 @@
     </form>
 
     <button class="btn btn-block btn-primary" id="loginButton">Logar</button>
-    <button class="btn btn-block btn-default" id="createUserButton">Criar conta</button>
+    <button class="btn btn-block btn-info" id="createUserButton">Criar nova conta</button>
 
     <p class="text-center mt-2">
       <button class="btn btn-lg btn-default" id="autGitHub"><i class="fa fa-2x fa-github"></i></button>
@@ -43,7 +43,10 @@
       <button class="btn btn-lg btn-danger" id="autGoogle"><i class="fa fa-2x fa-google"></i></button>
       <button class="btn btn-lg btn-warning" id="autAnnonymous"><i class="fa fa-2x fa-user"></i></button>
     </p>
+
+    <button class="btn btn-block btn-default" id="logOutButton">Sair</button>
   </div>
+  <a href="index.html" class="btn mt-2">Voltar para home</a>
 
 
   <!-- jQuery -->
