@@ -7,6 +7,7 @@ var senha = document.getElementById("senha");
 var loginButton = document.getElementById("loginButton");
 var createUserButton = document.getElementById("createUserButton");
 var logOutButton = document.getElementById("logOutButton");
+var autAnnonymous = document.getElementById("autAnnonymous");
 
 /*criar novo usuário*/
 createUserButton.addEventListener('click', function() {
@@ -60,3 +61,19 @@ logOutButton.addEventListener('click', function() {
 });
 
 
+/* Autenticar anônimo */
+autAnnonymous.addEventListener('click', function() {
+	firebase
+		.auth()
+		.signInAnonymously()
+		.then(function(result) {
+			console.log(result);
+			displayMessage.innerText = 'Bem vindo, desconhecido';
+			alert('Autenticado Anonimamente');
+		})
+		.catch(function(error) {
+			console.error(error.code);
+			console.error(error.message);
+			alert('Falha ao autenticar, verifique o erro no console');
+		});
+});
