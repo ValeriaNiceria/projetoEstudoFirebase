@@ -8,6 +8,7 @@ var loginButton = document.getElementById("loginButton");
 var createUserButton = document.getElementById("createUserButton");
 var logOutButton = document.getElementById("logOutButton");
 var autAnnonymous = document.getElementById("autAnnonymous");
+var autGitHub = document.getElementById("autGitHub");
 
 /*criar novo usuário*/
 createUserButton.addEventListener('click', function() {
@@ -77,3 +78,25 @@ autAnnonymous.addEventListener('click', function() {
 			alert('Falha ao autenticar, verifique o erro no console');
 		});
 });
+
+
+/* Autenticar com GitHub */
+autGitHub.addEventListener('click', function() {
+	/* Providers */
+	var provider = new firebase.auth.GithubAuthProvider();
+	signIn(provider);
+});
+
+function signIn(provider) {
+	firebase.auth()
+		.signInWithPopup(provider)
+		.then(function(result) {
+			console.log(result);
+			var token = result.credential.accessToken;
+			displayMessage.innerText = 'Bem vindo(a), ' + result.user.displayName;
+		})
+		.catch(function(error) {
+			console.log(error);
+			alert('Falha na autenticação');
+		});
+}
